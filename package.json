@@ -6,17 +6,22 @@
         "start": "webpack-dev-server --config ./webpack.config.js --hot --progress"
     },
     "dependencies": {
-        "deck.gl": "^8.0.0",
+        "deck.gl": "^7.0.0",
         "react": "^16.3.0",
         "react-dom": "^16.3.0",
         "react-map-gl": "^5.0.0",
         "@flowmap.gl/core": "^6.1.0",
-        "lerna": "^3.16.4"
+        "lerna": "^3.16.4",
+        "@fortawesome/react-fontawesome": "",
+        "@fortawesome/free-solid-svg-icons": "",
+        "@fortawesome/fontawesome-svg-core": ""
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
         "@babel/preset-react": "^7.0.0",
         "babel-loader": "^8.0.0",
+        "css-loader": "^3.4.1",
+        "style-loader": "",
         "webpack": "^4.41.2",
         "webpack-cli": "^3.3.10",
         "webpack-dev-server": "^3.9.0"

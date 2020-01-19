@@ -1,0 +1,93 @@
+
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 54px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+/* TIME BAR */
+#slider{
+	width: 100%;
+}
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  outline: none; /* Remove outline */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #01aa46; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+.slider::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background:#01aa46; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.bar{
+  display:none;
+  cursor: pointer;
+}
+input[name='radio-bar']{
+  display:none;
+}
+input[name='radio-bar']:checked + div.bar{
+  display:block !important;
+}
+.btna.active{
+  background-color: #01aa46!important;
+}
+.btna.active > i{
+  color: white !important;
+}
+
+/* MAPBOX*/
+.mapboxgl-ctrl-bottom-left{
+	/*bottom: 60px;*/
+      z-index: auto;
+}
+.mapboxgl-ctrl-bottom-right{
+	/*bottom: 60px;*/
+      z-index: auto;
+}
